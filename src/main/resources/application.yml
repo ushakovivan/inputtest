@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: '@spring.profiles.active@'
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/dev3_db
+    username: postgres
+    password: Qwe12345
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
